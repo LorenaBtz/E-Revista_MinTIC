@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border: 1px dotted #ffefef;
+  --back: rgba(17, 12, 27, 0.726);
+  --color: #000;
+  --color-boton: #fff;
+  --backtabla: #fff;
+  --color-precio: #585858;
+  --boxshadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+}
+
+.contenedor {
+  padding: 80px 0;
+  max-width: 1000px;
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
+}
+
+footer {
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #f24535;
+}
+
+.menu_login>div{
+  width: 21px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px auto;
+
+}
+
+.menu_login>div:first-child{
+  margin-top: 14px;
+}
+
+.menu_login {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px #000000;
+  animation: jordan 0.5s 3 alternate;
+  transform: scale(1);
+  z-index: 20;
+}
+
+.icono-login {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+}
+
+.encabezado {
+  display: flex;
+  width: 90%;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: auto;
+  overflow: hidden;
+}
+
+.nombre-revista h1 {
+  font-size: 60px;
+  width: 50%;
+  color: #ffefef;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 + p {
+  color: #774c4c;
+  text-align: center;
+}
+
+header {
+  height: 450px;
+  width: 100%;
+  position: relative;
+  background: #025373;
+}
