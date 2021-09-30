@@ -11,49 +11,62 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="..\CSS\styles.css" />
-    <title>Document</title>
+    <title>E-Revista MinTIC</title>
   </head>
   <body>
-    <header id="inicio">
-      <nav>
-        <div class="menu_login">
-          <img src="..\Assets\login.png" alt="" class="icono-login" />
+    <div class="contenedor">
+      <header class="inicio">
+        <nav>
+          <div class="menu_login">
+            <img src="../Assets/login.png" alt="" class="icono-login" onclick="">
+          </div>
+
+          <div class="login-form">
+            <div>Rol</div>
+            <select name="rol" id="rol">
+              <option value="1">Autor</option>
+              <option value="2">Editor</option>
+            </select>
+
+            <div>Usuario</div>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+
+            <div>Contraseña</div>
+            <input type="password" name="clave" id="clave" placeholder="Contraseña">
+          </div>
+
+          <div>
+            <button name="btnIngresar" onclick="">Ingresar</button>
+          </div>
+
+          <div>
+            <button name="btnCambioClave" onclick="">Olvide mi contraseña</button>
+          </div>
+        </nav>
+
+        <div class="encabezado">
+          <div class="nombre-revista">
+            <h1>ERevista MinTIC</h1>
+          </div>
         </div>
-        <div>
-          <form class="formulario">
-            <label for="rol"> Rol </label><br />
-            <select name="rol" id="">
-              <option value="1">Editor</option>
-              <option value="2">Autor</option></select
-            ><br /><br />
-            <label for="usuario"> Usuario </label><br />
-            <input
-              type="text"
-              name="usuario"
-              id="ususrioIngreso"
-              placeholder="Ingresar Usuario"
-            /><br /><br />
-            <label for="clave"> Clave </label><br />
-            <input
-              type="password"
-              name="clave"
-              id="claveIngreso"
-              placeholder="Ingresar Clave"
-            />
-          </form>
-        </div>
-      </nav>
-      <div class="encabezado">
-        <div class="nombre-revista">
-          <h1>ERevista_MinTIC</h1>
-        </div>
-      </div>
-    </header> <br>
-    <footer>
-      <h6>Contactanos</h6>
-      <p>ERevista_MinTIC@info.com</p>
-      <i></i>
-    </footer>
-    <script src="../JS/scripts.js"></script>
+      </header>
+
+      <section>
+        <nav>
+          skldfjaskldjf
+        </nav>  
+
+        <nav>
+          ldkaflasdjf
+        </nav>
+      </section>
+
+      <footer>
+        <h6>Contactanos</h6>
+        <p>ERevista_MinTIC@info.com</p>
+        <i></i>
+      </footer>
+      <script src="../JS/scripts.js"></script>
+    </div>
   </body>
 </html>

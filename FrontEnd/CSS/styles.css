@@ -24,10 +24,8 @@ body {
 }
 
 .contenedor {
-  padding: 80px 0;
-  max-width: 1000px;
-  width: 90%;
-  overflow: hidden;
+  width: 97vw;
+  height: 95vh;
   margin: auto;
 }
 
