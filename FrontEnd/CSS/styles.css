@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+font-family: 'Open Sans', 'Montserrat', sans-serif;
+*/
 
 ::before,
 ::after {
@@ -15,46 +21,71 @@
   --backtabla: #fff;
   --color-precio: #585858;
   --boxshadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-}
+} 
 
-body {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  transition: all 1s;
-}
-
-.contenedor {
+.contenedor{
   width: 97vw;
-  height: 95vh;
+  height: 90vh;
   margin: auto;
-}
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
 
-footer {
-  padding: 80px 0;
+  }
+
+header {
+  height: 30%;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background: #f24535;
+  position: relative;
+  background: #025373;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif; 
+}
+header nav{
+  display: block;
 }
 
-.menu_login>div{
-  width: 21px;
-  height: 3px;
-  background-color: #000000;
-  margin: 6px auto;
-
+header a{
+  font-family: 'Montserrat', sans-serif;
+  color:#ffefef
 }
 
-.menu_login>div:first-child{
-  margin-top: 14px;
+.navegacion{
+  
 }
 
-.menu_login {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #03A6A6;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f28705;
+}
+
+.active {
+  background-color: #f28705;
+}
+
+.menu-login {
   cursor: pointer;
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #ffffff;
+  background: #RRGGBBAA;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -67,27 +98,47 @@ footer {
   z-index: 20;
 }
 
-.icono-login {
+.menu-login>div{
+  width: 21px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px auto;
+
+}
+
+.menu-login>div:first-child{
+  margin-top: 14px;
+}
+
+.menu-login img {
   height: 40px;
   width: 40px;
   position: fixed;
 }
 
-.encabezado {
+.login-form{
+  color: #ffffff;
+  font-family: sans-serif;
+  position: fixed;
   display: flex;
-  width: 90%;
-  height: 550px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  color: #000000;
-  margin: auto;
-  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  transition-property: clip-path;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.ubicacion-form{
+  float: left;
 }
 
 .nombre-revista h1 {
   font-size: 60px;
   width: 50%;
-  color: #ffefef;
+  color: #ffffff;
 }
 
 h3 {
@@ -101,9 +152,18 @@ h3 + p {
   text-align: center;
 }
 
-header {
-  height: 450px;
-  width: 100%;
-  position: relative;
-  background: #025373;
+
+.section1 nav{
+  float: left;
 }
+
+
+footer {
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #f24535;
+}
+
+/* */

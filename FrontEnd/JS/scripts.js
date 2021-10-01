@@ -1,8 +1,12 @@
-let menu = document.getElementsByClassName(".menu_login")[0]
-let formulario = document.getElementsByClassName(".formulario");
-let contadorLogin =1;
+let menu = document.getElementsByClassName("menu-login")[0]
+let login = document.getElementById("login");
+let contadorMenu = 1;
 
-menu.addEventListener("click", function(){
-    formulario.classList.toggle("menudos");
-    contadorLogin++;
+menu.addEventListener("click", function () {
+    login.classList.toggle('menudos');
+    contadorMenu++;
 })
+
+login.addEventListener('click', function (e) {
+    login.classList.toggle('menudos');
+});
