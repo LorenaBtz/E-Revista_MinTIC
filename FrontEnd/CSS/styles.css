@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* 
 font-family: 'Montserrat', sans-serif;
@@ -22,31 +22,31 @@ font-family: 'Montserrat', 'Open Sans', sans-serif;
   --backtabla: #fff;
   --color-precio: #585858;
   --boxshadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-} 
+}
 
-.contenedor{
+.contenedor {
   width: 98vw;
   height: 95vh;
   margin: auto;
-  font-family: 'Open Sans', 'Montserrat', sans-serif;
-
-  }
+  font-family: "Open Sans", "Montserrat", sans-serif;
+}
 
 header {
-  height: 15%;
+  height: 21%;
   width: 100%;
   position: relative;
   background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Banner */
-.encabezado{
-  width: 90%;
+.encabezado {
+  width: 100%;
   height: 100%;
+  align-items: center;
 }
 
-.encabezado img{
+.encabezado img {
   height: 7%;
   width: 7%;
   float: left;
@@ -54,35 +54,35 @@ header {
 
 .nombre-revista h1 {
   font-size: 60px;
-  color: #f2B705;
+  color: #f2b705;
   margin-top: 0px;
   margin-bottom: 0px;
   float: left;
 }
 
 /* Login */
-.login{
+.login {
   box-sizing: border-box;
   width: 10%;
   height: 100%;
   float: right;
 }
 
-.login button{
-  background-color: #F24535;
+.login button {
+  background-color: #f24535;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 /* Barra de Navegacion */
-.barra nav{
+.barra nav {
   display: block;
 }
 
-a{
-  font-family: 'Montserrat', sans-serif;
-  color:#ffefef
+a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffefef;
 }
 
 ul {
@@ -90,7 +90,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #03A6A6;
+  background-color: #03a6a6;
 }
 
 li {
@@ -106,20 +106,20 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #f2B705;
+  background-color: #f2b705;
 }
 
 .active {
-  background-color: #f2B705;
+  background-color: #f2b705;
 }
 
 /* Articulo */
-.section1 nav{
+.section1 nav {
   background-color: blanchedalmond;
   height: 46%;
   width: 100%;
 }
-article{
+article {
   float: left;
   margin: auto;
   background-color: blanchedalmond;
@@ -128,12 +128,12 @@ article{
 }
 
 /* Menu Navegacion lateral */
-.section1 h3 ul li{
+.section1 h3 ul li {
   background-color: aquamarine;
 }
 
-aside{
-  float: left;  
+aside {
+  float: left;
   background-color: aquamarine;
   height: 100%;
   width: 30%;
@@ -143,40 +143,54 @@ aside{
 footer {
   margin: 0px 0px;
   width: 100%;
-  height: 39%;
+  height: 25%;
   display: flex;
   justify-content: space-around;
   background: #025373;
 }
 
-footer h6{
-  font-family: 'Open Sans', 'Montserrat', sans-serif;
+footer h6 {
+  font-family: "Open Sans", "Montserrat", sans-serif;
   font-size: 24px;
   color: #ffffff;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-footer p{
-  font-family: 'Open Sans', 'Montserrat', sans-serif;
+footer p {
+  font-family: "Open Sans", "Montserrat", sans-serif;
   margin-bottom: 10px;
   color: #ffffff;
   font-style: oblique;
 }
 
-.contacto{
-  width: 27%;
+.contacto {
+  width: 80%;
+  height: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.contacto i{
+.contacto i {
   font-size: 28px;
   color: #025373;
   padding: 14px;
   background: #ffefef;
   width: 30px;
   height: 30px;
-  text-align: center;
   border-radius: 100%;
-  margin: 15px 15px 0 0;
+  margin: 0px 0px 10% 10%;
   cursor: pointer;
+  float: left;
+}
+
+.logo-dev{
+  width: 20%;
+  height: 100%;
+}
+
+.logo-dev img{
+    float: left;
 }
