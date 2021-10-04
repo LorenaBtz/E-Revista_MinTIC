@@ -32,7 +32,7 @@ font-family: 'Montserrat', 'Open Sans', sans-serif;
 }
 
 header {
-  height: 21%;
+  height: 14%;
   width: 100%;
   position: relative;
   background-color: #ffffff;
@@ -47,9 +47,10 @@ header {
 }
 
 .encabezado img {
-  height: 7%;
-  width: 7%;
+  height: 5%;
+  width: 5%;
   float: left;
+  align-items: center;
 }
 
 .nombre-revista h1 {
@@ -127,22 +128,23 @@ header {
 }
 
 /* Articulo */
-.section1 nav {
-  background-color: blanchedalmond;
-  height: 46%;
+.section1{ 
+  height: 61%;
   width: 100%;
 }
+
 article {
   float: left;
   margin: auto;
-  background-color: blanchedalmond;
+  background-color: #ffffff;
   height: 100%;
   width: 80%;
+  padding: ;
 }
 
 /* Menu Navegacion lateral */
 aside {
-  background-color: #fdeec0;
+  background-color: #ffffff;
   float: left;
   background-color: fdeec0;
   text-align: center;
