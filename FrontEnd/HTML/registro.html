@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../CSS/style-registro.css" />
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <title>Registro Autores</title>
 </head>
 
@@ -38,70 +39,36 @@
             </div>
         </header>
 
-        <section class="section1">
-            <nav>
-                <div class="form_wrapper">
-                    <div class="form_container">
-                        <div class="title_container">
-                            <h2>Responsive Registration Form</h2>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="">
-                                <form>
-                                    <div class="input_field"> <span><i aria-hidden="true"
-                                                class="fa fa-envelope"></i></span>
-                                        <input type="email" name="email" placeholder="Email" required />
-                                    </div>
-                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                                        <input type="password" name="password" placeholder="Password" required />
-                                    </div>
-                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                                        <input type="password" name="password" placeholder="Re-type Password"
-                                            required />
-                                    </div>
-                                    <div class="row clearfix">
-                                        <div class="col_half">
-                                            <div class="input_field"> <span><i aria-hidden="true"
-                                                        class="fa fa-user"></i></span>
-                                                <input type="text" name="name" placeholder="First Name" />
-                                            </div>
-                                        </div>
-                                        <div class="col_half">
-                                            <div class="input_field"> <span><i aria-hidden="true"
-                                                        class="fa fa-user"></i></span>
-                                                <input type="text" name="name" placeholder="Last Name" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="input_field radio_option">
-                                        <input type="radio" name="radiogroup1" id="rd1">
-                                        <label for="rd1">Male</label>
-                                        <input type="radio" name="radiogroup1" id="rd2">
-                                        <label for="rd2">Female</label>
-                                    </div>
-                                    <div class="input_field select_option">
-                                        <select>
-                                            <option>Select a country</option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                        </select>
-                                        <div class="select_arrow"></div>
-                                    </div>
-                                    <div class="input_field checkbox_option">
-                                        <input type="checkbox" id="cb1">
-                                        <label for="cb1">I agree with terms and conditions</label>
-                                    </div>
-                                    <div class="input_field checkbox_option">
-                                        <input type="checkbox" id="cb2">
-                                        <label for="cb2">I want to receive the newsletter</label>
-                                    </div>
-                                    <input class="button" type="submit" value="Register" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <section>
+            <div>
+                <h1>--- Formulario Registro ---</h1>
+
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>Cedula: <input class="controls" type="text" name="nombres" id="nombres"
+                            placeholder="Número de identificación"></p>
+                    <p>Nombres: <input class="controls" type="text" name="nombres" id="nombres"
+                            placeholder="Nombres Completos"></p>
+                    <p>Apellidos: <input class="controls" type="text" name="apellidos" id="apellidos"
+                            placeholder="Apellidos Completos"></p>
+                    <p>Correo: <input class="controls" type="email" name="correo" id="correo"
+                            placeholder="Ingrese su Correo">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Datos de Registro</legend>
+                    <p>Usuario: <input class="controls" type="password" name="correo" id="correo"
+                            placeholder="Ingrese su Usuario"></p>
+                    <p>Contraseña: <input class="controls" type="password" name="correo" id="correo"
+                            placeholder="Ingrese su Contraseña"></p>
+                    <p>Confirmar Contraseña: <input class="controls" type="password" name="correo" id="correo"
+                            placeholder="Ingrese su Contraseña"></p>
+                </fieldset>
+
+                <p><input type="checkbox" name="terminos" id="terminos"> Estoy de acuerdo con <a href="#">Terminos y
+                        Condiciones</a></p>
+                <button class="button button1">Registrar</button>
         </section>
 
         <footer>
