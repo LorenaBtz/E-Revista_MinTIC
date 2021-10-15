@@ -11,285 +11,300 @@ font-family: 'Montserrat', 'Open Sans', sans-serif;
 
 ::before,
 ::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --border: 1px dotted #ffefef;
-  --back: rgba(17, 12, 27, 0.726);
-  --color: #000;
-  --color-boton: #fff;
-  --backtabla: #fff;
-  --color-precio: #585858;
-  --boxshadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    --border: 1px dotted #ffefef;
+    --back: rgba(17, 12, 27, 0.726);
+    --color: #000;
+    --color-boton: #fff;
+    --backtabla: #fff;
+    --color-precio: #585858;
+    --boxshadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contenedor {
-  width: 98vw;
-  height: 95vh;
-  margin: auto;
-  font-family: "Open Sans", "Montserrat", sans-serif;
+    width: 98vw;
+    height: 95vh;
+    margin: auto;
+    font-family: "Open Sans", "Montserrat", sans-serif;
 }
 
 header {
-  height: 14%;
-  width: 100%;
-  position: relative;
-  background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+    height: 14%;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
 }
 
+
 /* Banner */
+
 .encabezado {
-  width: 100%;
-  height: 100%;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
 .encabezado img {
-  height: 5%;
-  width: 5%;
-  float: left;
-  align-items: center;
+    height: 5%;
+    width: 5%;
+    float: left;
+    align-items: center;
 }
 
 .nombre-revista h1 {
-  font-size: 60px;
-  color: #f2b705;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  float: left;
+    font-size: 60px;
+    color: #f2b705;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
 }
 
+
 /* Login & Barra de Navegacion*/
+
 .topnav {
-  overflow: hidden;
-  background-color: #03a6a6;
+    overflow: hidden;
+    background-color: #03a6a6;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #f28705;
-  color: #ffffff;
+    background-color: #f28705;
+    color: #ffffff;
 }
 
 .topnav .login-container {
-  float: right;
+    float: right;
 }
 
 .topnav input[type="text"],
 input[type="password"] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  width: 120px;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 120px;
 }
 
 .topnav .login-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background-color: #025373;
-  color: white;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #025373;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
 }
 
 .topnav .login-container button:hover {
-  background-color: #f28705;
+    background-color: #f28705;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav .login-container {
-    float: none;
-  }
-  .topnav a,
-  .topnav input[type="text"],
-  .topnav .login-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type="text"] {
-    border: 1px solid #ccc;
-  }
+    .topnav .login-container {
+        float: none;
+    }
+    .topnav a,
+    .topnav input[type="text"],
+    .topnav .login-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type="text"] {
+        border: 1px solid #ccc;
+    }
 }
 
+
 /* Articulo */
+
 .section1 {
-  height: 54%;
-  width: 100%;
+    height: 54%;
+    width: 100%;
 }
 
 iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 article {
-  float: left;
-  margin: auto;
-  background-color: #ffffff;
-  height: 100%;
-  width: 80%;
-  font-family: 'Open Sans', 'Montserrat';
+    float: left;
+    margin: auto;
+    background-color: #ffffff;
+    height: 100%;
+    width: 80%;
+    font-family: 'Open Sans', 'Montserrat';
 }
 
+
 /* Menu Navegacion lateral */
+
 aside {
-  background-color: #ffffff;
-  float: left;
-  text-align: center;
-  height: 100%;
-  width: 20%;
-  font-family: 'Open Sans', 'Montserrat';
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    font-family: 'Open Sans', 'Montserrat';
 }
 
 .sidebar {
-  background-color: #ffffff;
-  overflow-x: hidden;
-  padding-top: 16px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 16px;
 }
 
 .sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-family: "Montserrat", "Open Sans";
-  font-size: 20px;
-  color: #000000;
-  display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: "Montserrat", "Open Sans";
+    font-size: 20px;
+    color: #000000;
+    display: block;
 }
 
 .sidebar a:hover {
-  color: #4b4747;
+    color: #4b4747;
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
 }
 
+
 /* Pie de pagina */
+
 footer {
-  margin: 0px 0px;
-  width: 100%;
-  height: 25%;
-  display: flex;
-  justify-content: space-around;
-  background: #025373;
+    margin: 0px 0px;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    background: #025373;
 }
 
 .contacto h6 {
-  font-family: "Open Sans", "Montserrat", sans-serif;
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: 300;
-  margin-top: 5px;
-  margin-bottom: 5px;
+    font-family: "Open Sans", "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .contacto {
-  width: 60%;
-  height: 50%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+    width: 60%;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .contacto a {
-  font-family: "Open Sans", "Montserrat", sans-serif;
-  color: #ffefef;
-  font-style: oblique;
+    font-family: "Open Sans", "Montserrat", sans-serif;
+    color: #ffefef;
+    font-style: oblique;
 }
 
 .contacto i {
-  font-size: 28px;
-  color: #025373;
-  padding: 14px;
-  background: #ffefef;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  margin: 0px 0px 10% 10%;
-  cursor: pointer;
-  float: left;
+    font-size: 28px;
+    color: #025373;
+    padding: 14px;
+    background: #ffefef;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 0px 0px 10% 10%;
+    cursor: pointer;
+    float: left;
 }
 
 .logos {
-  width: 40%;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    width: 40%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
+
 /* Clalisficados */
+
 .contenedor1 {
-  height: 30vh;
-  width: 60vw;
-  background-color: #ffffff;
-  color: #025373;
-  font-family: 'Open Sans', 'Montserrat';
+    height: 30vh;
+    width: 60vw;
+    background-color: #ffffff;
+    color: #025373;
+    font-family: 'Open Sans', 'Montserrat';
 }
 
 .contenedor1 img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -60px 0 0 -60px;
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0 0 -60px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 @-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
+
 @-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Open Sans';
-  font-size: 40px;
-} 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 40px;
+}
