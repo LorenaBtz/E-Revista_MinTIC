@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario para Ver Autores</title>
     <style>
         .container {
             width: 95vw;
@@ -21,12 +20,6 @@
             font-family: 'Montserrat', 'Open Sans';
         }
         
-        .centrar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
         section {
             align-items: center;
             width: 93%;
@@ -36,34 +29,7 @@
             font-family: 'Montserrat';
         }
         
-        label {
-            font-weight: bold;
-        }
-        
-        input[type=text] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #cccccc;
-            border-radius: 10px;
-            box-sizing: border-box;
-            align-content: center;
-            display: block;
-        }
-        
-        textarea {
-            width: 100%;
-            height: 25%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #cccccc;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-        
-        .botones {
+        .boton {
             display: block;
             text-align: center;
             justify-content: center;
@@ -90,13 +56,14 @@
         }
     </style>
     <script src="Js/Scripts.js"></script>
+    <title>Formulario para Ver Autores</title>
 </head>
 
 <body>
     <header class="Header2">
-        <h1>Lista Autores</h1>
+        <h1>Lista de Autores</h1>
     </header>
-    <div class="boton">
+    <div class="boton centrar">
         <section class="Section2">
             <div>
                 <button name="list_autores" onclick=ListarAutores()>Generar Lista</button>

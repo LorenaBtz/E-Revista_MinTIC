@@ -1,30 +1,149 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Modificación de Articulo</title>
-    <link rel="stylesheet" href="Css/estilos.css">
+    <style>
+        .container {
+            width: 95vw;
+            height: 80vh;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Montserrat', 'Open Sans';
+        }
+        
+        .centrar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section {
+            align-items: center;
+            width: 92%;
+            border-radius: 10px;
+            background-color: #eeeeee;
+            padding: 30px;
+            font-family: 'Montserrat';
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            align-content: center;
+            display: block;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 25%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        
+        .botones {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        button {
+            width: 30%;
+            background-color: #03a6a6;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: medium;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #025373;
+        }
+    </style>
     <script src="Js/Scripts.js"></script>
+    <title>Corregir Articulo</title>
 </head>
+
 <body>
-    <header class="Header2">Formulario de Modificación de Articulos</header>
-    <section class="Section2">
-        <div>Ingrese el código o el titulo del articulo que desea modificar:</div>
-        <div><label for="id_articulo">Id Articulo: </label> <input type="text" name="id_articulo" id="id_articulo"></div>
-        <div>o</div>
-        <div><label for="title">Titulo: </label> <input type="text" name="title" id="title"></div>
-        <div><button name="con_articulo" onclick=ConsultarArticulo()>Consultar articulo</button><button name="Cancelar" onclick=IrAtras()>Cancelar</button></div>
+    <header>
+        <h1>Corregir Articulo</h1>
+    </header>
+    <br>
+    <section>
+        <div>
+            <h3>Ingrese el código o el titulo del articulo que desea modificar:</h3>
+        </div>
+
+        <div>
+            <label for="id_articulo">Id Articulo: </label>
+            <input type="text" name="id_articulo" id="id_articulo">
+        </div>
+
+        <div>
+            <label for="title">Titulo: </label>
+            <input type="text" name="title" id="title">
+        </div>
+
+        <div class="botones">
+            <button name="con_articulo" onclick=ConsultarArticulo()>Consultar articulo</button>
+            <button name="Cancelar" onclick=IrAtras()>Cancelar</button>
+        </div>
+
         <br>
-        <div><label for="id_articulo1">Id Articulo: </label> <input type="text" name="id_articulo1" disabled id="id_articulo1"></div>
-        <div><label for="title1">Titulo: </label> <input type="text" name="title1" id="title1"></div>
-        <div><label for="desc">Descripcion: </label> <input type="text" name="desc" id="desc"></div>
-        <div><label for="cont" top>Contenido: </label> <textarea name="cont" id="cont" cols="30" rows="10"></textarea></div>
-        <div><button name="mod_articulo" onclick=ModificarArticulo()>Modificar articulo</button></div>
 
+        <div>
+            <label for="id_articulo1">Id Articulo: </label>
+            <input type="text" name="id_articulo1" disabled id="id_articulo1">
+        </div>
 
+        <div>
+            <label for="title1">Titulo: </label>
+            <input type="text" name="title1" id="title1">
+        </div>
 
+        <div>
+            <label for="desc">Descripcion: </label>
+            <input type="text" name="desc" id="desc">
+        </div>
+
+        <div>
+            <label for="cont" top>Contenido: </label>
+            <textarea name="cont" id="cont" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="botones">
+            <button name="mod_articulo" onclick=ModificarArticulo()>Modificar articulo</button>
+        </div>
     </section>
 
 </body>
+
 </html>

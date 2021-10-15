@@ -1,25 +1,133 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 95vw;
+            height: 80vh;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Montserrat', 'Open Sans';
+        }
+        
+        .centrar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section {
+            align-items: center;
+            width: 95%;
+            border-radius: 10px;
+            background-color: #eeeeee;
+            padding: 30px;
+            font-family: 'Montserrat';
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            align-content: center;
+            display: block;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 25%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        
+        .botones {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        button {
+            width: 30%;
+            background-color: #03a6a6;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: medium;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #025373;
+        }
+    </style>
     <title>Formulario de Ingreso de Articulos</title>
-    <link rel="stylesheet" href="Css/estilos.css">
     <script src="Js/Scripts.js"></script>
 </head>
+
 <body>
-    <header class="Header2">Formulario de Ingreso de Articulos</header>
-    <section class="Section2">
-        <div>Diligencie por favor los siguientes campos:</div>
-        
-            <div><label for="title">Titulo: </label> <input type="text" name="title" id="title"></div>
-            <div><label for="desc"></label>Descripcion: </label><input type="text" name="desc" id="desc"></div>
-            <div><label for="cont"></label>Contenido: </label><input type="text" name="cont" id="cont"></div>
-           
-            <div><button name="Ing_articulo" onclick=IngresarArticulo()>Ingresar articulo</button><button name="Cancelar" onclick=IrAtras()>Cancelar</button></div>
-        
-        
-    </section>
-    
+    <div class="container">
+        <header>
+            <h1>Nuevo Articulo</h1>
+        </header>
+
+        <section class="Section2">
+            <div>
+                <h3>
+                    Diligencie por favor los siguientes campos:
+                </h3>
+            </div>
+            <br>
+            <div>
+                <label for="title">Titulo: </label>
+                <input type="text" name="title" id="title">
+            </div>
+
+            <div>
+                <label for="desc">Descripcion: </label>
+                <input type="text" name="desc" id="desc">
+            </div>
+
+            <div>
+                <label for="cont">Contenido: </label>
+                <textarea type="text" name="cont" id="cont"></textarea>
+            </div>
+
+            <div class="botones">
+                <button name="Ing_articulo" onclick=IngresarArticulo()>Ingresar articulo</button>
+                <button name="Cancelar" onclick=IrAtras()>Cancelar</button>
+            </div>
+
+
+        </section>
+    </div>
 </body>
+
 </html>

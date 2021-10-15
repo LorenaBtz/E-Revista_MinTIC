@@ -1,36 +1,164 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Ingreso de Usuarios</title>
-    <link rel="stylesheet" href="Css/estilos.css">
+    <style>
+        .container {
+            width: 95vw;
+            height: 80vh;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Montserrat', 'Open Sans';
+        }
+        
+        .centrar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section {
+            align-items: center;
+            width: 95%;
+            border-radius: 10px;
+            background-color: #eeeeee;
+            padding: 30px;
+            font-family: 'Montserrat';
+        }
+        
+        label {
+            font-weight: normal;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            align-content: center;
+            display: block;
+            font-family: 'Montserrat';
+        }
+        
+        legend {
+            font-family: 'Open Sans';
+            font-weight: bolder;
+        }
+        
+        .botones {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        button {
+            width: 30%;
+            background-color: #03a6a6;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: medium;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #025373;
+        }
+    </style>
     <script src="Js/Scripts.js"></script>
+    <title>Formulario de Registro de Autores</title>
 </head>
-<body>
-    <header class="Header2">Formulario de Ingreso de Usuarios</header>
-    <section class="Section2">
-        <div>Diligencie por favor los siguientes campos:</div>
-        
-            <div><label for="ced">Número de Cédula:</label> <input type="text" name="ced" id="ced"></div>
-            <div><label for="nom1">Primer nombre: </label><input type="text" name="nom1" id="nom1"></div>
-            <div><label for="nom1">Segundo nombre: </label> <input type="text" name="nom2" id="nom2"> </div>
-            <div><label for="apell1">Primer apellido: </label><input type="text" name="apell1" id="apell1"></div>
-            <div><label for="apell2">Segundo apellido:</label> <input type="text" name="apell2" id="apell2"> </div>
-            <div><label for="correo">Correo electrónico: </label><input type="text" name="correo" id="correo"></div>
-            <div>Constraseña: <input type="text" name="clave" id="clave"></div>
-            <div>Tipo usuario: 
 
-            <select name="tipo" id="tipo">
-                <option value="0" selected> </option>
-                <option value="1">Autor</option>
-                <option value="2">Editor</option>
-              </select>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulario de Registro</h1>
+        </header>
+
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <br>
+                <div>
+                    <label for="ced">Número de Cédula:</label>
+                    <input type="text" name="ced" id="ced">
+                </div>
+
+                <div>
+                    <label for="nom1">Primer nombre: </label>
+                    <input type="text" name="nom1" id="nom1">
+                </div>
+
+                <div>
+                    <label for="nom1">Segundo nombre: </label>
+                    <input type="text" name="nom2" id="nom2">
+                </div>
+
+                <div>
+                    <label for="apell1">Primer apellido: </label>
+                    <input type="text" name="apell1" id="apell1">
+                </div>
+
+                <div>
+                    <label for="apell2">Segundo apellido:</label>
+                    <input type="text" name="apell2" id="apell2">
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico: </label>
+                    <input type="text" name="correo" id="correo">
+                </div>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Datos de Registro</legend>
+                <br>
+                <div>
+                    <label for=""> Constraseña:</label>
+                    <input type="text" name="clave" id="clave">
+                </div>
+
+                <div>
+                    <label for=""> Tipo usuario:</label>
+                    <select name="tipo" id="tipo">
+                        <option value="0" selected> </option>
+                        <option value="1">Autor</option>
+                        <option value="2">Editor</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <div class="botones">
+                <button name="Ingresar" onclick=IngresarUsuario()>Ingresar</button>
+                <button name="Cancelar" onclick=IrAtras()>Cancelar</button>
             </div>
-            <div><button name="Ingresar" onclick=IngresarUsuario()>Ingresar</button><button name="Cancelar" onclick=IrAtras()>Cancelar</button></div>
-        
-        
-    </section>
-    
+
+
+        </section>
+    </div>
 </body>
+
 </html>
