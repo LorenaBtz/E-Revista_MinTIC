@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revista", "Revista\Revista.csproj", "{9CE38CB2-5B63-4B7A-B0EE-2C0ED9305364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CE38CB2-5B63-4B7A-B0EE-2C0ED9305364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE38CB2-5B63-4B7A-B0EE-2C0ED9305364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE38CB2-5B63-4B7A-B0EE-2C0ED9305364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE38CB2-5B63-4B7A-B0EE-2C0ED9305364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92575B58-31A9-470F-9306-4C4A9E285C46}
+	EndGlobalSection
+EndGlobal

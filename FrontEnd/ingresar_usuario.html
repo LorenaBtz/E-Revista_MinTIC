@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso de Usuarios</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <script src="Js/Scripts.js"></script>
+</head>
+<body>
+    <header class="Header2">Formulario de Ingreso de Usuarios</header>
+    <section class="Section2">
+        <div>Diligencie por favor los siguientes campos:</div>
+        
+            <div><label for="ced">Número de Cédula:</label> <input type="text" name="ced" id="ced"></div>
+            <div><label for="nom1">Primer nombre: </label><input type="text" name="nom1" id="nom1"></div>
+            <div><label for="nom1">Segundo nombre: </label> <input type="text" name="nom2" id="nom2"> </div>
+            <div><label for="apell1">Primer apellido: </label><input type="text" name="apell1" id="apell1"></div>
+            <div><label for="apell2">Segundo apellido:</label> <input type="text" name="apell2" id="apell2"> </div>
+            <div><label for="correo">Correo electrónico: </label><input type="text" name="correo" id="correo"></div>
+            <div>Constraseña: <input type="text" name="clave" id="clave"></div>
+            <div>Tipo usuario: 
+
+            <select name="tipo" id="tipo">
+                <option value="0" selected> </option>
+                <option value="1">Autor</option>
+                <option value="2">Editor</option>
+              </select>
+            </div>
+            <div><button name="Ingresar" onclick=IngresarUsuario()>Ingresar</button><button name="Cancelar" onclick=IrAtras()>Cancelar</button></div>
+        
+        
+    </section>
+    
+</body>
+</html>
