@@ -31,6 +31,7 @@ nav {
     height: 82%;
     background-color: #f2b705;
     float: left;
+    position: relative;
 }
 
 nav a {
@@ -81,4 +82,8 @@ footer {
 
 footer h6 {
     margin: 1% 0% 0% 0%;
+}
+
+.salir {
+    /*position: absolute;*/
 }

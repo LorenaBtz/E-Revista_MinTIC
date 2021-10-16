@@ -6,23 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        .contenedor1 {
+            height: 80vh;
+            width: 90vw;
+            background-color: #ffffff;
+            color: #025373;
+            font-family: 'Montserrat';
+        }
+        
+        .contenedor1 img {
+            max-width: 17%;
+            max-height: 17%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -60px 0 0 -60px;
+            -webkit-animation: spin 4s linear infinite;
+            -moz-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+        }
+        
+        @-moz-keyframes spin {
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 40px;
+        }
+        
+        #demo {
+            font-family: 'Montserrat';
+            font-size: larger;
+            font-style: oblique;
+        }
+    </style>
     <title>Clasificados</title>
 </head>
 
 <body>
     <div class="contenedor1">
         <div>
-            <img src="../Assets/Logo-Revista.png" alt="" width="120" height="139">
+            <img src="../Assets/Logo-Revista.png" alt="">
         </div>
 
         <div class="middle">
-            <h1>MUY PRONTO</h1>
+            <h1>PRONTO</h1>
             <br>
-            <p id="demo" style="font-size:65px"></p>
+            <p id="demo"></p>
         </div>
     </div>
 
